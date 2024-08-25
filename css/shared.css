@@ -1,0 +1,32 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url("https://db.onlinewebfonts.com/c/b52804ac57ef6e90d2826a6b0f111133?family=Integral+CF+Bold");
+:root {
+  --title-color: #000000;
+  --white-bachkround: #ffffff;
+  --light-background: #f0f0f0;
+  --dark-background: #000000;
+  --text-color: #000000 opacity 0.6;
+}
+
+/*ბადის დამატებითი მახასიათებლები */
+body {
+  height: 100%;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  background-color: var(--white-bachkround);
+  min-width: 320px;
+}
+/* სათაურების ფონტი */
+.title {
+  font-family: "Integral CF Bold", sans-serif;
+}
+/* ფლექსი როგორც კლასი */
+.flex {
+  display: flex;
+}
+/* ფლექს დაირექშენი როგორც კლასი */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}

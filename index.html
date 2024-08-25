@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+    content="SHOP.CO. FIND CLOTHES THAT MATCHES YOUR STYLE.Sign up and get 20% off to your first order."/>
+    <meta name="keywords"
+      content="shop.co, clothes shop, shopping, discounts, fashion, mwomen clothes, men clothes, 
+    kids clothes, shirts, jeans, dress style, casual, formal, party, gym, lates offers "/>
+    <meta property="og:title" content="SHOP.CO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shop.co" />
+    <meta property="og:image"
+    content="https://shop.co/fashion.accessories.png"/>
+    <meta property="og:description"
+    content="FIND CLOTHES THAT MATCHES YOUR STYLE"/>
+    <meta property="og:site_name" content="https://shop.co" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="author" content="BTU Student Teona Inaneishvili" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/details.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <title>SHOP.CO</title>
+  </head>
+
+  <body>
+    <!-- ჰედერის სექცია -->
+    <!-- გავყავი ორ ნაწილად, ზედა და ქვედა ნაწილები -->
+    <header class="header flex-column">
+      <!-- ზედა ნაწილი.შავი ტოპლაინი -->
+      <div class="header-top-line">
+        <div class="header-top-line-container flex">
+          <div class="header-top-line-content">
+            Sign up and get 20% off to your first order.
+            <span class="underline"> Sign Up Now</span>
+          </div>
+          <button class="close">
+            <img src="./assets/svg/close.svg" alt="close icon" />
+          </button>
+        </div>
+      </div>
+      <!-- ჰედერის ქვედა ნაწილი. მთავარი ნაწილი -->
+      <div class="header-main-part flex">
+        <div class="mob-layout flex">
+          <img
+            src="./assets/svg/burger.svg"
+            alt="burger menu icon"
+            class="burger"
+          />
+          <h1 class="header-logo title"><a href="/index.html">SHOP.CO</a></h1>
+        </div>
+        <!-- ჰედერის ნავიგაცია -->
+        <nav class="header-nav">
+          <ul class="flex">
+            <li class="drop-down flex">
+              <a href="/details.html">
+                Shop<span
+                  ><img
+                    src="./assets/svg/dropdowns.svg"
+                    alt="drop-down-icon"
+                    class="drop-down-icon"
+                  /> </span
+              ></a>
+            </li>
+            <li><a href="#">on sale</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Brands</a></li>
+          </ul>
+        </nav>
+
+        <!-- ჰედერის საძიებო ველი -->
+        <form class="header-search flex" action="/search" method="GET">
+          <img src="./assets/svg/magnifier.svg" alt="magnifier" />
+          <input
+            type="search"
+            name="search"
+            placeholder="Search for products..."
+          />
+        </form>
+        <!-- ჰედერის მარჯვენა ნაწილის აქონების კონტეინერი -->
+        <div class="header-icon-container">
+          <img
+            src="./assets/svg/mini search icon.svg"
+            alt="mini searchg icon"
+            class="mini-search"
+          />
+          <a href="cart.html">
+            <img src="./assets/svg/cart.svg" alt="cart" />
+          </a>
+          <img src="./assets/svg/user.svg" alt="user" class="user" />
+        </div>
+      </div>
+    </header>
+    <!-- მთავარი გვერდის პირველი გვერდი. პირველი სექცია -->
+    <section class="first-section">
+      <!-- პირველი სექცია გავყავი მარცხენა და მარჯვენა ნაწილებად -->
+      <div class="first-section-divs flex">
+        <!-- პირველი სექციის მარცხენა ნაწილი.. კომპანიის შესახებ ინფო -->
+        <div class="first-section-left-container flex-column">
+          <h2 class="first-section-left-container-title title">
+            FIND CLOTHES THAT MATCHES YOUR STYLE
+          </h2>
+          <p>
+            Browse through our diverse range of meticulously crafted garments,
+            designed to bring out your individuality and cater to your sense of
+            style.
+          </p>
+          <div class="shop-now"><a href="./details.html">Shop Now</a></div>
+
+          <div class="first-section-left-container-info flex">
+            <div>200+<span class="info">International Brands</span></div>
+            <img src="./assets/svg/vertical line.svg" alt="vertical line" />
+
+            <div>2,000+<span class="info">High-Quality Products</span></div>
+            <img
+              src="./assets/svg/vertical line.svg"
+              alt="vertical line"
+              class="mob-hide-stick"
+            />
+
+            <div>30,000+<span class="info">Happy Customers</span></div>
+          </div>
+        </div>
+        <!-- პირველი სექციის მარჯვენა ნაწილი.. 
+         ფოტო და ვარსკვლავები -->
+        <div class="first-section-right-container">
+          <img
+            src="./assets/svg/big star.svg"
+            alt="big star icon"
+            class="big-star"
+          />
+          <img
+            src="./assets/svg/liitle star.svg"
+            alt="little star icon"
+            class="little-star"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ბრენდების შავი სექცია  -->
+    <section class="brands">
+      <div class="brands-container flex">
+        <img src="/assets/svg/versace.svg " alt="versace" class="versace" />
+        <img src="/assets/svg/zara.svg " alt="zara" class="zara" />
+        <img src="/assets/svg/gucci.svg " alt="gucci" class="gucci" />
+        <img src="/assets/svg/prada.svg " alt=" prada" class="prada" />
+        <img
+          src="/assets/svg/calvin klein.svg "
+          alt="calvin klein"
+          class="calvin-klein"
+        />
+      </div>
+    </section>
+    <!-- ახალი მიღებული პროდუქციის კონტეინერი -->
+    <div class="new-arrivals-container">
+      <h2 class="new-arrivals-title title">NEW ARRIVALS</h2>
+      <!-- პროდუქციის ქარდების კონტეინერი -->
+      <div class="arrivals-cards-container flex">
+        <!-- თითოეული ქარდი -->
+        <div class="arrival-card">
+          <img
+            src="./assets/imgs/new arrivals-1.png "
+            alt="T-SHIRT "
+            class="product-img"
+          />
+          <h4>T-SHIRT WITH TAPE DETAILS</h4>
+          <img src="./assets/svg/4.5.svg " alt="4.5 stars " class="stars" />
+          <p class="price">120</p>
+        </div>
+
+        <div class="arrival-card">
+          <img
+            src="./assets/imgs/new arrivals-2.png "
+            alt="FIT JEANS "
+            class="product-img"
+          />
+          <h4>SKINNY FIT JEANS</h4>
+          <img src="./assets/svg/3.5.svg " alt="3.5 stars " class="stars" />
+          <p class="price flex">
+            240<span class="old-price">260</span><span class="sale">-20%</span>
+          </p>
+        </div>
+        <!-- მობ ჰაიდ რაზეც მაქვს გაწერილი პატარა რეზოლუციაზე ვაქრობ დისფლეი ნანით -->
+        <div class="arrival-card mob-hide">
+          <img
+            src="./assets/imgs/new arrivals-3.png "
+            alt="SHIRT "
+            class="product-img"
+          />
+          <h4>CHECKERED SHIRT</h4>
+          <img src="./assets/svg/4.5.svg " alt="4.5 stars " class="stars" />
+          <p class="price">180</p>
+        </div>
+
+        <div class="arrival-card mob-hide">
+          <img
+            src="./assets/imgs/new arrivals-4.png "
+            alt="T-SHIRT "
+            class="product-img"
+          />
+          <h4>SLEEVE STRIPED T-SHIRT</h4>
+          <img src="./assets/svg/4.5.svg " alt="4.5 stars " class="stars" />
+          <p class="price flex">
+            130 <span class="old-price">160</span><span class="sale">-30%</span>
+          </p>
+        </div>
+      </div>
+
+      <button class="view-all">View All</button>
+    </div>
+    <!-- ტოპ გაყიდვადი პროდუქციის ბლოკი -->
+    <div class="top-selling-container">
+      <h2 class="top-selling-title title">top selling</h2>
+      <!-- ტოპ გაყიდვადი პროდუქციის ქარდები-->
+      <div class="top-selling-cards-container flex">
+        <!-- ტოპ გაყიდვადი პროდუქციის თითოეული ქარდი -->
+        <div class="top-selling-card">
+          <img
+            src="./assets/imgs/top seeling-1.png "
+            alt="SHIRT "
+            class="product-img"
+          />
+          <h4>VERTICAL STRIPED SHIRT</h4>
+          <img src="./assets/svg/5.svg " alt="5 stars " class="stars" />
+          <p class="price flex">
+            212<span class="old-price">232</span><span class="sale">-20%</span>
+          </p>
+        </div>
+
+        <div class="top-selling-card">
+          <img
+            src="./assets/imgs/top seeling-2.png "
+            alt="T-SHIRT "
+            class="product-img"
+          />
+          <h4>COURAGE GRAPHIC T-SHIRT</h4>
+          <img src="./assets/svg/4.svg " alt="4 stars " class="stars" />
+          <p class="price">145</p>
+        </div>
+
+        <div class="top-selling-card mob-hide">
+          <img
+            src="./assets/imgs/top seeling-3.png "
+            alt="SHORTS "
+            class="product-img"
+          />
+          <h4>LOOSE FIT BERMUDA SHORTS</h4>
+          <img src="./assets/svg/3.svg " alt="3 stars " class="stars" />
+          <p class="price">80</p>
+        </div>
+
+        <div class="top-selling-card mob-hide">
+          <img
+            src="./assets/imgs/top seeling-4.png "
+            alt="JEANS "
+            class="product-img"
+          />
+          <h4>FADED SKINNY JEANS</h4>
+          <img src="./assets/svg/4.5.svg " alt="4.5 stars " class="stars" />
+          <p class="price">210</p>
+        </div>
+      </div>
+
+      <button class="view-all view-all-2">View All</button>
+    </div>
+    <!-- ტანსაცმელი კატეგორიების მიხედვით -->
+    <section class="browse-section">
+      <!-- ტანსაცმელი კატეგორიების კონტეინერი -->
+      <div class="browse-container flex-column">
+        <h2 class="browse-container-title title">BROWSE BY dress STYLE</h2>
+
+        <div class="dress-style-block flex-column">
+          <!-- პირველი ორი ხაზის კატეგორია -->
+          <div class="dress-style-block-top flex">
+            <div class="top-1 dress-style-child">
+              <span class="style-name">Casual</span>
+            </div>
+            <div class="top-2 dress-style-child">
+              <span class="style-name">Formal</span>
+            </div>
+          </div>
+          <!-- მეორე ორი ხაზის კატეგორია -->
+          <div class="dress-style-block-bottom flex">
+            <div class="bottom-1 dress-style-child">
+              <span class="style-name">Party</span>
+            </div>
+            <div class="bottom-2 dress-style-child">
+              <span class="style-name">Gym</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- კმაყოფილი მომხმარებლების შეფასებების ბლოკი -->
+    <div class="happy-customers-container">
+      <div class="happy-customers-header flex">
+        <h2 class="happy-customers-title title">
+          OUR HAPPY <span class="customers">CUSTOMERS</span>
+        </h2>
+        <div class="arrows flex">
+          <img src="./assets/svg/left.svg " alt="left side arrow " />
+          <img src="./assets/svg/right.svg " alt="right side arrow " />
+        </div>
+      </div>
+      <!-- კმაყოფილი მომხმარებლების შეფასებების ქარდების კონტეინერი -->
+      <div class="customers-reviews-container flex">
+        <!-- კმაყოფილი მომხმარებლის თითოეული ქარდი -->
+        <div class="reviews-card">
+          <img
+            src="./assets/svg/five stars.svg "
+            alt="customers stars "
+            class="customer-stars"
+          />
+          <p class="customer-name flex">
+            Sarah M.
+            <span><img src="./assets/svg/done.svg " alt="online " /></span>
+          </p>
+          <p>
+            "I 'm blown away by the quality and style of the clothes I received
+            from Shop.co. From casual wear to elegant dresses, every piece I've
+            bought has exceeded my expectations.”
+          </p>
+        </div>
+        <!-- აქაც ანალოგიურად მობ ჰაიფებით დაბალ რეზოლუციაზე ვმალავ -->
+        <div class="reviews-card mob-hide">
+          <img
+            src="./assets/svg/five stars.svg"
+            alt="customers stars"
+            class="customer-stars"
+          />
+          <p class="customer-name flex">
+            Alex K.
+            <span><img src="./assets/svg/done.svg" alt="online" /></span>
+          </p>
+          <p>
+            "Finding clothes that align with my personal style used to be a
+            challenge until I discovered Shop.co. The range of options they
+            offer is truly remarkable, catering to a variety of tastes and
+            occasions.”
+          </p>
+        </div>
+
+        <div class="reviews-card mob-hide">
+          <img
+            src="./assets/svg/five stars.svg"
+            alt="customers stars"
+            class="customer-stars"
+          />
+          <p class="customer-name flex">
+            James L.
+            <span><img src="./assets/svg/done.svg" alt="online" /></span>
+          </p>
+          <p>
+            "As someone who's always on the lookout for unique fashion pieces,
+            I'm thrilled to have stumbled upon Shop.co. The selection of clothes
+            is not only diverse but also on-point with the latest trends.”
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ფუტერის სექცია -->
+    <footer>
+      <!-- ფუტერიდან ზემოთ ამოსატანი შავი ბლოკი -->
+      <div class="latest-offers flex">
+        <h2 class="title">STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+        <form class="offer-form flex-column">
+          <div class="request-email flex">
+            <img src="./assets/svg/email.svg" alt="email icon" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <button type="submit">Subscribe to Newsletter</button>
+        </form>
+      </div>
+      <!-- თვითონ ფუტერი ორ ნაწილად გავყავი.. პირველი ანუ ზედა და მეორე ანუ ქვედა ნაწილებად -->
+      <div class="footer-container flex-column">
+        <!-- ფუტერის პირველი ანუ ზედა ნაწილი -->
+        <div class="footer-first-container flex">
+          <!-- about-shop-co ლოგო და მაღაზიის შესახებ -->
+          <div class="footer-container-column flex-column about-shop-co">
+            <h2 class="footer-logo title">SHOP.CO</h2>
+            <p class="shop-content">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <!-- სოციალური ქსელების ბლოკი -->
+            <div class="social-networks flex">
+              <img src="./assets/svg/twitter.svg" alt="twitter icon" />
+              <img src="./assets/svg/facebook.svg" alt="facebook icon" />
+              <img src="./assets/svg/instagram.svg" alt="instagram icon" />
+              <img src="./assets/svg/github.svg" alt="github icon" />
+            </div>
+          </div>
+          <!-- ფუტერის თითოეული სვეტი.. სათაური და ქვესათაურები -->
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Company</h5>
+            <div class="footer-column flex-column">
+              <p>About</p>
+              <p>Features</p>
+              <p>Works</p>
+              <p>Career</p>
+            </div>
+          </div>
+          <!-- ფუტერის თითოეული სვეტი.. სათაური და ქვესათაურები -->
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Help</h5>
+            <div class="footer-column flex-column">
+              <p>Customer Support</p>
+              <p>Delivery Details</p>
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+          <!-- ფუტერის თითოეული სვეტი.. სათაური და ქვესათაურები -->
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">FAQ</h5>
+            <div class="footer-column flex-column">
+              <p>Account</p>
+              <p>Manage Deliveries</p>
+              <p>Orders</p>
+              <p>Payments</p>
+            </div>
+          </div>
+             <!-- ფუტერის თითოეული სვეტი.. სათაური და ქვესათაურები -->
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Resources</h5>
+            <div class="footer-column flex-column">
+              <p>Free eBooks</p>
+              <p>Development Tutorial</p>
+              <p>How to - Blog</p>
+              <p>Youtube Playlist</p>
+            </div>
+          </div>
+        </div>
+        <!-- ფუტერის მეორე კონტეინერი ანუ ქვედა ჰორიზონტალური ნაწილი -->
+        <div class="footer-second-container flex">
+          <!-- საიტის დამზადების ინფო -->
+          <div>Shop.co © 2000-2023, All Rights Reserved</div>
+          <!-- გადახდის მეთოდები -->
+          <div class="payment-method flex">
+            <img src="./assets/imgs/visa.png" alt="visa" />
+            <img src="./assets/imgs/mastercard.png" alt="mastercard" />
+            <img src="./assets/imgs/paypal.png" alt="paypal" />
+            <img src="./assets/imgs/apple pay.png" alt="apple pay" />
+            <img src="./assets/imgs/google pay.png" alt="google pay" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

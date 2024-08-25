@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/details.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <title>SHOP.CO</title>
+  </head>
+  <body>
+    <!-- კალათი გვერდის ჰედერი  -->
+    <header class="header flex-column">
+      <!-- ტოპლაინით -->
+      <div class="header-top-line">
+        <div class="header-top-line-container flex">
+          <div class="header-top-line-content">
+            Sign up and get 20% off to your first order.
+            <span class="underline"> Sign Up Now</span>
+          </div>
+          <button class="close">
+            <img src="./assets/svg/close.svg" alt="close icon" />
+          </button>
+        </div>
+      </div>
+
+      <div class="header-main-part .header-main-part-for-cart-page flex">
+        <div class="mob-layout flex">
+          <img
+            src="./assets/svg/burger.svg"
+            alt="burger menu icon"
+            class="burger"
+          />
+          <h1 class="header-logo title"><a href="/index.html">SHOP.CO</a></h1>
+        </div>
+        <!-- ნავიგაციით -->
+        <nav class="header-nav">
+          <ul class="flex">
+            <li class="drop-down flex">
+              <a href="/details.html">
+                Shop<span
+                  ><img
+                    src="./assets/svg/dropdowns.svg"
+                    alt="drop-down-icon"
+                    class="drop-down-icon"
+                  /> </span
+              ></a>
+            </li>
+            <li><a href="#">on sale</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Brands</a></li>
+          </ul>
+        </nav>
+        <!-- სერჩით -->
+        <form class="header-search flex" action="/search" method="GET">
+          <img src="./assets/svg/magnifier.svg" alt="magnifier" />
+          <input
+            type="search"
+            name="search"
+            placeholder="Search for products..."
+          />
+        </form>
+        <!-- ჰედერის მარჯვენა კუთხის აიქონები -->
+        <div class="header-icon-container">
+          <img
+            src="./assets/svg/mini search icon.svg"
+            alt="mini searchg icon"
+            class="mini-search"
+          />
+          <a href="cart.html">
+            <img src="./assets/svg/cart.svg" alt="cart" />
+          </a>
+          <img src="./assets/svg/user.svg" alt="user" class="user" />
+        </div>
+      </div>
+    </header>
+    <!-- კალათის გვერდი -->
+    <section class="cart-page">
+      <div class="cart-page-container flex-column">
+        <div class="cart-page-top flex-column">
+          <!-- მენიუ -->
+          <div class="cart-menu flex">
+            <span>Home</span>
+            <img src="/assets/svg/details arrow.svg" alt="detail arrow icon" />
+            <span>Cart</span>
+          </div>
+
+          <h2 class="cart-title title">Your cart</h2>
+        </div>
+        <!-- 
+        კალათის შიგთავსის შესახებ ინფო -->
+        <div class="cart-info">
+          <p>your cart is empty</p>
+        </div>
+      </div>
+    </section>
+    <!-- ფუტერი -->
+    <footer>
+      <div class="latest-offers latest-offers-for-carts-page flex">
+        <h2 class="title">STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+        <form class="offer-form flex-column">
+          <div class="request-email flex">
+            <img src="./assets/svg/email.svg" alt="email icon" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <button type="submit">Subscribe to Newsletter</button>
+        </form>
+      </div>
+
+      <div class="footer-container flex-column">
+        <div class="footer-first-container flex">
+          <div class="footer-container-column flex-column about-shop-co">
+            <h2 class="footer-logo title">SHOP.CO</h2>
+            <p class="shop-content">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <div class="social-networks flex">
+              <img src="./assets/svg/twitter.svg" alt="twitter icon" />
+              <img src="./assets/svg/facebook.svg" alt="facebook icon" />
+              <img src="./assets/svg/instagram.svg" alt="instagram icon" />
+              <img src="./assets/svg/github.svg" alt="github icon" />
+            </div>
+          </div>
+
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Company</h5>
+            <div class="footer-column flex-column">
+              <p>About</p>
+              <p>Features</p>
+              <p>Works</p>
+              <p>Career</p>
+            </div>
+          </div>
+
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Help</h5>
+            <div class="footer-column flex-column">
+              <p>Customer Support</p>
+              <p>Delivery Details</p>
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">FAQ</h5>
+            <div class="footer-column flex-column">
+              <p>Account</p>
+              <p>Manage Deliveries</p>
+              <p>Orders</p>
+              <p>Payments</p>
+            </div>
+          </div>
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Resources</h5>
+            <div class="footer-column flex-column">
+              <p>Free eBooks</p>
+              <p>Development Tutorial</p>
+              <p>How to - Blog</p>
+              <p>Youtube Playlist</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-second-container flex">
+          <div>Shop.co © 2000-2023, All Rights Reserved</div>
+          <div class="payment-method flex">
+            <img src="./assets/imgs/visa.png" alt="visa" />
+            <img src="./assets/imgs/mastercard.png" alt="mastercard" />
+            <img src="./assets/imgs/paypal.png" alt="paypal" />
+            <img src="./assets/imgs/apple pay.png" alt="apple pay" />
+            <img src="./assets/imgs/google pay.png" alt="google pay" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ცოტათი განსხვავებული ჰედერი ჰქონდა კალათას */
+.header-main-part-for-cart-page {
+  width: 86%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #00000010;
+}
+/* კალათის გვერდი */
+.cart-page {
+  height: 815px;
+}
+.cart-page-container {
+  max-width: 1240px;
+  width: 86%;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.cart-menu {
+  font-size: 16px;
+  width: 106px;
+  height: 22px;
+  color: #00000060;
+  cursor: pointer;
+}
+.cart-menu:first-child {
+  margin-right: 4px;
+}
+.cart-menu img {
+  margin-right: 12px;
+}
+.cart-title {
+  font-size: 40px;
+}
+/* ინფო კალათის შიგთავსის შესახებ */
+.cart-info {
+  position: relative;
+  min-height: 56vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cart-info p {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+@media screen and(max-width:1340px){
+  .cart-page-top{
+    margin-left: 7%;
+  }
+}
+@media screen and(max-width:450px){
+  .latest-offers-for-carts-page{
+  width: 86%;
+}}
+  @media screen and(max-width:390px){
+  .cart-page-top{
+    width: 86%;
+    margin: auto;
+  }}

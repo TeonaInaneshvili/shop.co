@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/details.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <title>SHOP.CO</title>
+  </head>
+  <body>
+
+<!-- ჰედერი -->
+<!-- ჰედერის ტოპლაინ ნაწილი -->
+ <header class="header flex-column">
+    <div class="header-top-line">
+      <div class="header-top-line-container flex">
+        <div class="header-top-line-content">
+          Sign up and get 20% off to your first order.
+          <span class="underline"> Sign Up Now</span>
+      </div>
+        <button class="close">
+          <img src="./assets/svg/close.svg" alt="close icon" />
+      </button>
+    </div>
+  </div>
+<!-- ჰედერის მთავარი ნაწილი -->
+ <div class="header-main-part  header-main-part-for-details-page flex">
+    <div class="mob-layout flex">
+      <img
+        src="./assets/svg/burger.svg"
+        alt="burger menu icon"
+        class="burger"
+      />
+      <h1 class="header-logo title"><a href="/index.html">SHOP.CO</a></h1>
+  </div>
+<!-- ჰედერის ნავიგაცია -->
+   <nav class="header-nav">
+      <ul class="flex">
+        <li class="drop-down flex">
+          <a href="/details.html">
+            Shop<span
+              ><img
+                src="./assets/svg/dropdowns.svg"
+                alt="drop-down-icon"
+                class="drop-down-icon"
+              /> </span
+          ></a>
+      </li>
+        <li><a href="#">on sale</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Brands</a></li>
+    </ul>
+  </nav>
+  <!-- სერჩი -->
+    <form class="header-search flex" action="/search" method="GET">
+      <img src="./assets/svg/magnifier.svg" alt="magnifier" />
+      <input
+        type="search"
+        name="search"
+        placeholder="Search for products..."
+          />
+        </form>
+
+      <!-- ჰედერის მარჯვენა ნაწილის აქონების კონტეინერი -->
+        <div class="header-icon-container">
+          <img
+            src="./assets/svg/mini search icon.svg"
+            alt="mini searchg icon"
+            class="mini-search"
+          />
+          <a href="cart.html">
+            <img src="./assets/svg/cart.svg" alt="cart" />
+          </a>
+          <img src="./assets/svg/user.svg" alt="user"  class="user"/>
+        </div>
+      </div>
+    </header>
+<!-- დეტალების გვერდი -->
+    <section class="details">
+      <!-- დეტალების მენიუ -->
+      <div class="details-menu flex">
+        <span>Home</span>
+        <img src="/assets/svg/details arrow.svg" alt="detail arrow icon" />
+        <span>shop</span>
+      </div>
+<!-- დეტალების გვერდის პირველი კონტეინერი გავყავი ორ ნაწილად
+მარცხენა პროდუქციის ფოტოებისმარჯვენა დეტალური აღწერა -->
+<div class="details-first-container flex">
+  <!-- პროდუქტის მაისურის დეტალური ფოტოების კონტეინერი -->
+  <div class="product-imgs-container flex">
+    <!-- პატარა ფოტოები -->
+    <div class="small-imgs flex-column">
+      <img src="./assets/imgs/details1.png" alt="shirt-img" />
+      <img src="./assets/imgs/details2.png" alt="shirt-img" />
+      <img src="./assets/imgs/details3.png" alt="shirt-img" />
+    </div>
+    <img
+      src="./assets/imgs/details-big-img.png"
+      alt="shirt-img"
+      class="big-img"
+    />
+  </div>
+<!-- პროდუქტის დეტალური აღწერა ზომა ფერი ფასი შეძენის შესაძლებლობა და სხვა -->
+<div class="product-description-container flex-column">
+  <h2 class="title">One Life Graphic T-shirt</h2>
+  <img
+    src="./assets/svg/stars 4.5.5.svg"
+    alt="rating stars"
+    class="rating-stars"
+  />
+  <p class="price product-price flex">
+    260<span class="old-price">300</span><span class="sale">-40%</span>
+  </p>
+  <p class="product-desc-text">
+    This graphic t-shirt which is perfect for any occasion. Crafted from
+    a soft and breathable fabric, it offers superior comfort and style.
+  </p>
+
+<div class="select-colors flex-column">
+  <h6>Select Colors</h6>
+  <img src="./assets/svg/colors.svg" alt="pick color" />
+</div>
+<div class="choose-size flex-column">
+  <h6>Choose Size</h6>
+  <div class="sizes flex">
+    <button class="size-btn">Small</button>
+    <button class="size-btn">Medium</button>
+    <button class="size-btn">Large</button>
+    <button class="size-btn">X-Large</button>
+  </div>
+</div>
+<div class="items-quantity-container flex">
+  <div class="items-quantity flex">
+  <button class="dec">
+    <img src="/assets/svg/dec.svg" alt="dec item icon" />
+  </button>
+  <span class="quantity">1</span>
+  <button class="inc">
+    <img src="/assets/svg/inc.svg" alt="inc item icon" />
+  </button>
+</div>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+ </div>
+</div>
+
+<!-- შეფასებების სექცია -->
+  </section>
+    <section class="reviews-section">
+    <div class="reviews-bar flex-column">
+        <div class="reviews-header flex">
+          <h4>Product Details</h4>
+          <h4>Rating & Reviews</h4>
+          <h4>FAQs</h4>
+        </div>
+        <div class="reviews-filter flex">
+          <h3>All Reviews <span class="reviews-quantity">(451)</span></h3>
+          <div class="filter-block flex">
+            <img
+              src="/assets/svg/filter.svg"
+              alt="filter icon"
+              class="filter-icon"
+            />
+            <button class="latest-drop-down flex">
+              Latest<span
+                ><img src="/assets/svg/dropdowns.svg" alt="drop down icon"
+              /></span>
+            </button>
+            <button class="write-review">Write a Review</button>
+          </div>
+        </div>
+      </div>
+<!-- მომხმარებლების შეფასებებოს კომტეინერი -->
+      <div
+        class="customers-reviews-container details-page-reviews-container flex">
+        <!-- შეფასებების თითოეულ ქარს ასეთი სტრუქტურა აქვს -->
+        <div class="reviews-card detail-page-reviews-card">
+          <div class="stars-container flex">
+            <img
+              src="./assets/svg/four-and-half-stars.svg "
+              alt="customers stars "
+              class="customer-stars"
+            />
+            <img src="./assets/svg/dots.svg" alt="see more" />
+          </div>
+          <p class="customer-name detail-page-customer-name flex">
+            Samantha D.
+            <span><img src="./assets/svg/done.svg " alt="online " /></span>
+          </p>
+          <p>
+            "I absolutely love this t-shirt! The design is unique and the fabric
+            feels so comfortable. As a fellow designer, I appreciate the
+            attention to detail. It's become my favorite go-to shirt."
+          </p>
+          <p class="date">Posted on August 14, 2023</p>
+        </div>
+        <div class="reviews-card detail-page-reviews-card">
+          <div class="stars-container flex">
+            <img
+              src="./assets/svg/four-stars.svg"
+              alt="customers stars"
+              class="customer-stars"
+            />
+            <img src="./assets/svg/dots.svg" alt="see more" />
+          </div>
+          <p class="customer-name detail-page-customer-name flex">
+            Alex M.
+            <span><img src="./assets/svg/done.svg" alt="online" /></span>
+          </p>
+          <p>
+            "The t-shirt exceeded my expectations! The colors are vibrant and
+            the print quality is top-notch. Being a UI/UX designer myself, I'm
+            quite picky about aesthetics, and this t-shirt definitely gets a
+            thumbs up from me."
+          </p>
+          <p class="date">Posted on August 15, 2023</p>
+        </div>
+
+        <div class="reviews-card detail-page-reviews-card">
+          <div class="stars-container flex">
+            <img
+              src="./assets/svg/three-and-half-stars.svg"
+              alt="customers stars"
+              class="customer-stars"
+            />
+            <img src="./assets/svg/dots.svg" alt="see more" />
+          </div>
+          <p class="customer-name detail-page-customer-name flex">
+            Ethan R.
+            <span><img src="./assets/svg/done.svg" alt="online" /></span>
+          </p>
+          <p>
+            "This t-shirt is a must-have for anyone who appreciates good design.
+            The minimalistic yet stylish pattern caught my eye, and the fit is
+            perfect. I can see the designer's touch in every aspect of this
+            shirt."
+          </p>
+          <p class="date">Posted on August 16, 2023</p>
+        </div>
+        <div class="reviews-card detail-page-reviews-card mob-hide">
+          <div class="stars-container flex">
+            <img
+              src="./assets/svg/four-stars.svg "
+              alt="customers stars "
+              class="customer-stars"
+            />
+            <img src="./assets/svg/dots.svg" alt="see more" />
+          </div>
+          <p class="customer-name detail-page-customer-name flex">
+            Olivia P.
+            <span><img src="./assets/svg/done.svg " alt="online " /></span>
+          </p>
+          <p>
+            "As a UI/UX enthusiast, I value simplicity and functionality. This
+            t-shirt not only represents those principles but also feels great to
+            wear. It's evident that the designer poured their creativity into
+            making this t-shirt stand out."
+          </p>
+          <p class="date">Posted on August 17, 2023</p>
+        </div>
+        <div class="reviews-card detail-page-reviews-card mob-hide">
+          <div class="stars-container flex">
+            <img
+              src="./assets/svg/four-stars.svg"
+              alt="customers stars"
+              class="customer-stars"
+            />
+            <img src="./assets/svg/dots.svg" alt="see more" />
+          </div>
+          <p class="customer-name detail-page-customer-name flex">
+            Liam K.
+            <span><img src="./assets/svg/done.svg" alt="online" /></span>
+          </p>
+          <p>
+            "This t-shirt is a fusion of comfort and creativity. The fabric is
+            soft, and the design speaks volumes about the designer's skill. It's
+            like wearing a piece of art that reflects my passion for both design
+            and fashion."
+          </p>
+          <p class="date">Posted on August 18, 2023</p>
+        </div>
+
+        <div class="reviews-card detail-page-reviews-card mob-hide">
+          <div class="stars-container flex">
+            <img
+              src="./assets/svg/four-and-half-stars.svg"
+              alt="customers stars"
+              class="customer-stars"
+            />
+            <img src="./assets/svg/dots.svg" alt="see more" />
+          </div>
+          <p class="customer-name detail-page-customer-name flex">
+            Ava H. <span><img src="./assets/svg/done.svg" alt="online" /></span>
+          </p>
+          <p>
+            "I'm not just wearing a t-shirt; I'm wearing a piece of design
+            philosophy. The intricate details and thoughtful layout of the
+            design make this shirt a conversation starter."
+          </p>
+          <p class="date">Posted on August 19, 2023</p>
+        </div>
+      </div>
+      <button class="load-more">Load More Reviews</button>
+    <!-- ლაიქ სექცია -->
+    </section>
+    <section class="like">
+      <div class="new-arrivals-container like-container">
+        <h2 class="new-arrivals-title like-title title">You might also like</h2>
+        <!-- პროდუქციის რომელიც შეიძლება მოგვეწონოს, ქარდების კონტეინერი -->
+        <div class="arrivals-cards-container like-cards-container flex">
+          <!-- თითოეული ქარდი -->
+          <div class="arrival-card">
+            <img
+              src="./assets/imgs/like1.png "
+              alt="T-SHIRT "
+              class="product-img"
+            />
+            <h4>Polo with Contrast Trims</h4>
+            <img src="./assets/svg/4.5.svg " alt="4.5 stars " class="stars" />
+            <p class="price flex">
+              212<span class="old-price">242</span><span class="sale">-20%</span>
+            </p>
+          </div>
+  
+          <div class="arrival-card">
+            <img
+              src="./assets/imgs/like2.png "
+              alt="FIT JEANS "
+              class="product-img"
+            />
+            <h4>Gradient Graphic T-shirt</h4>
+            <img src="./assets/svg/3.5.svg " alt="3.5 stars " class="stars" />
+            <p class="price">145</p>
+          </div>
+  
+          <div class="arrival-card mob-hide">
+            <img
+              src="./assets/imgs/like3.png "
+              alt="SHIRT "
+              class="product-img"
+            />
+            <h4>Polo with Tipping Details</h4>
+            <img src="./assets/svg/4.5.svg " alt="4.5 stars " class="stars" />
+            <p class="price">180</p>
+          </div>
+  
+          <div class="arrival-card mob-hide">
+            <img
+              src="./assets/imgs/like4.png "
+              alt="T-SHIRT "
+              class="product-img"
+            />
+            <h4>Black Striped T-shirt</h4>
+            <img src="./assets/svg/4.5.svg " alt="4.5 stars " class="stars" />
+            <p class="price flex">
+              120 <span class="old-price">150</span><span class="sale">-30%</span>
+            </p>
+          </div>
+        </div>
+    </section>
+<!-- ფუტერის ნაწილი დეტალურად index.html ფაილშია  -->
+    <footer>
+      <div class="latest-offers latest-offers-for-details-page flex">
+        <h2 class="title">STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+        <form class="offer-form flex-column">
+          <div class="request-email flex">
+            <img src="./assets/svg/email.svg" alt="email icon" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <button type="submit">Subscribe to Newsletter</button>
+        </form>
+      </div>
+
+      <div class="footer-container flex-column">
+        <div class="footer-first-container flex">
+          <div class="footer-container-column flex-column about-shop-co">
+            <h2 class="footer-logo title">SHOP.CO</h2>
+            <p class="shop-content">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <div class="social-networks flex">
+              <img src="./assets/svg/twitter.svg" alt="twitter icon" />
+              <img src="./assets/svg/facebook.svg" alt="facebook icon" />
+              <img src="./assets/svg/instagram.svg" alt="instagram icon" />
+              <img src="./assets/svg/github.svg" alt="github icon" />
+            </div>
+          </div>
+
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Company</h5>
+            <div class="footer-column flex-column">
+              <p>About</p>
+              <p>Features</p>
+              <p>Works</p>
+              <p>Career</p>
+            </div>
+          </div>
+
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Help</h5>
+            <div class="footer-column flex-column">
+              <p>Customer Support</p>
+              <p>Delivery Details</p>
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">FAQ</h5>
+            <div class="footer-column flex-column">
+              <p>Account</p>
+              <p>Manage Deliveries</p>
+              <p>Orders</p>
+              <p>Payments</p>
+            </div>
+          </div>
+          <div class="footer-container-column flex-column">
+            <h5 class="footer-column-header">Resources</h5>
+            <div class="footer-column flex-column">
+              <p>Free eBooks</p>
+              <p>Development Tutorial</p>
+              <p>How to - Blog</p>
+              <p>Youtube Playlist</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-second-container flex">
+          <div>Shop.co © 2000-2023, All Rights Reserved</div>
+          <div class="payment-method flex">
+            <img src="./assets/imgs/visa.png" alt="visa" />
+            <img src="./assets/imgs/mastercard.png" alt="mastercard" />
+            <img src="./assets/imgs/paypal.png" alt="paypal" />
+            <img src="./assets/imgs/apple pay.png" alt="apple pay" />
+            <img src="./assets/imgs/google pay.png" alt="google pay" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
